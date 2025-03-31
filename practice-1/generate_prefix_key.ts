@@ -13,7 +13,6 @@ function findKeypairWithPrefix(prefix) {
         if (pubKeyBase58.startsWith(prefix)) {
             console.log(`Found matching key after ${attempts} attempts!`);
             console.log("Public Key:", pubKeyBase58);
-            console.log("Private Key (Base58):", bs58.encode(keypair.secretKey));
             return keypair;
         }
 
